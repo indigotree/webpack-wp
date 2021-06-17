@@ -1,6 +1,6 @@
 {
   "name": "@indigotree/webpack-wp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A webpack.config.js for WordPress",
   "main": "index.js",
   "repository": {
