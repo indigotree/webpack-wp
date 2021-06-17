@@ -10,11 +10,11 @@ module.exports = {
   mode: isDev ? "development" : "production",
   stats: "minimal",
   entry: {
-    index: path.resolve(process.cwd(), "src", "index.js"),
+    index: path.join(process.cwd(), "src", "index.js"),
   },
   output: {
     filename: "[name].js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.join(process.cwd(), "dist"),
     publicPath: "",
   },
   module: {
