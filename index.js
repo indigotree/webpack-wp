@@ -3,6 +3,7 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 const DependencyExtractionWebpackPlugin = require("@wordpress/dependency-extraction-webpack-plugin");
+const jsonImporter = require("node-sass-json-importer");
 
 const isDev = process.env.NODE_ENV !== "production";
 
@@ -25,8 +26,8 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@wordpress/babel-preset-default"]
-          }
+            presets: ["@wordpress/babel-preset-default"],
+          },
         },
       },
       {
@@ -47,6 +48,11 @@ module.exports = {
           },
           {
             loader: "sass-loader",
+            options: {
+              sassOptions: {
+                importer: jsonImporter(),
+              },
+            },
           },
         ],
       },
