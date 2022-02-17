@@ -18,6 +18,9 @@ module.exports = {
     path: path.join(process.cwd(), "dist"),
     publicPath: "",
   },
+  externals: {
+    jquery: 'jQuery'
+  },
   module: {
     rules: [
       {
