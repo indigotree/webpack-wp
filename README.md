@@ -1,5 +1,4 @@
 # Webpack Config for WordPress
-
 A shared Webpack config for WordPress projects.
 
 ## Installation
