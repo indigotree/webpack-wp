@@ -3,7 +3,7 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 const DependencyExtractionWebpackPlugin = require("@wordpress/dependency-extraction-webpack-plugin");
-const jsonImporter = require("node-sass-json-importer");
+const jsonImporter = require("dart-sass-json-importer");
 
 const isDev = process.env.NODE_ENV !== "production";
 
@@ -19,7 +19,7 @@ module.exports = {
     publicPath: "",
   },
   externals: {
-    jquery: 'jQuery'
+    jquery: "jQuery",
   },
   module: {
     rules: [
@@ -42,10 +42,7 @@ module.exports = {
             loader: "postcss-loader",
             options: {
               postcssOptions: {
-                plugins: [
-                  require("autoprefixer")(),
-                  require("postcss-flexbugs-fixes"),
-                ],
+                plugins: [require("autoprefixer")(), require("postcss-flexbugs-fixes")],
               },
             },
           },
