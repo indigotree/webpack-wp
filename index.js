@@ -3,7 +3,6 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 const DependencyExtractionWebpackPlugin = require("@wordpress/dependency-extraction-webpack-plugin");
-const jsonImporter = require("@indigotree/dart-sass-json-importer");
 
 const isDev = process.env.NODE_ENV !== "production";
 
@@ -48,11 +47,6 @@ module.exports = {
           },
           {
             loader: "sass-loader",
-            options: {
-              sassOptions: {
-                importer: jsonImporter(),
-              },
-            },
           },
         ],
       },

@@ -1,6 +1,6 @@
 {
   "name": "@indigotree/webpack-wp",
-  "version": "1.6.1",
+  "version": "2.0.0",
   "description": "A webpack.config.js for WordPress",
   "main": "index.js",
   "repository": {
@@ -15,7 +15,6 @@
   "homepage": "https://github.com/indigotree/webpack-wp#readme",
   "dependencies": {
     "@babel/core": "^7.15.5",
-    "@indigotree/dart-sass-json-importer": "^0.2.0",
     "@wordpress/babel-preset-default": "^6.3.2",
     "@wordpress/dependency-extraction-webpack-plugin": "^3.2.1",
     "autoprefixer": "^10.3.4",
