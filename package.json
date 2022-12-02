@@ -15,8 +15,8 @@
   "homepage": "https://github.com/indigotree/webpack-wp#readme",
   "dependencies": {
     "@babel/core": "^7.15.5",
-    "@wordpress/babel-preset-default": "^6.3.2",
-    "@wordpress/dependency-extraction-webpack-plugin": "^3.2.1",
+    "@wordpress/babel-preset-default": "*",
+    "@wordpress/dependency-extraction-webpack-plugin": "*",
     "autoprefixer": "^10.3.4",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.3.0",
