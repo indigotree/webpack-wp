@@ -1,6 +1,6 @@
 {
   "name": "@indigotree/webpack-wp",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "A webpack.config.js for WordPress",
   "main": "index.js",
   "repository": {
@@ -29,7 +29,7 @@
   },
   "peerDependencies": {
     "webpack": "~5.x",
-    "webpack-cli": "~4.x"
+    "webpack-cli": "~5.x"
   },
   "publishConfig": {
     "access": "public"
