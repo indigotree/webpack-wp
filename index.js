@@ -3,6 +3,7 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 const DependencyExtractionWebpackPlugin = require("@wordpress/dependency-extraction-webpack-plugin");
+const WebpackRTLPlugin = require("@automattic/webpack-rtl-plugin");
 
 const isDev = process.env.NODE_ENV !== "production";
 
@@ -66,5 +67,6 @@ module.exports = {
     }),
     new DependencyExtractionWebpackPlugin(),
     new WebpackManifestPlugin(),
+    new WebpackRTLPlugin(),
   ],
 };
