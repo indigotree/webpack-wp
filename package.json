@@ -1,38 +1,38 @@
 {
-  "name": "@indigotree/webpack-wp",
-  "version": "2.6.1",
-  "description": "A webpack.config.js for WordPress",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/indigotree/webpack-wp.git"
-  },
-  "author": "Indigo Tree <hello@indigotree.co.uk>",
-  "license": "GPL-3.0+",
-  "bugs": {
-    "url": "https://github.com/indigotree/webpack-wp/issues"
-  },
-  "homepage": "https://github.com/indigotree/webpack-wp#readme",
-  "dependencies": {
-    "@automattic/webpack-rtl-plugin": "^6.0.0",
-    "@babel/core": "^7.21.4",
-    "@wordpress/babel-preset-default": "*",
-    "@wordpress/dependency-extraction-webpack-plugin": "*",
-    "autoprefixer": "^10.4.14",
-    "babel-loader": "^9.1.2",
-    "css-loader": "^6.7.3",
-    "mini-css-extract-plugin": "^2.7.5",
-    "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-loader": "^7.2.4",
-    "sass": "^1.60.0",
-    "sass-loader": "^13.2.2",
-    "webpack-manifest-plugin": "^5.0.0"
-  },
-  "peerDependencies": {
-    "webpack": "~5.x",
-    "webpack-cli": "~5.x"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+    "name": "@indigotree/webpack-wp",
+    "version": "2.6.3",
+    "description": "A webpack.config.js for WordPress.",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/indigotree/webpack-wp.git"
+    },
+    "author": "Indigo Tree <hello@indigotree.co.uk>",
+    "license": "GPL-3.0+",
+    "bugs": {
+        "url": "https://github.com/indigotree/webpack-wp/issues"
+    },
+    "homepage": "https://github.com/indigotree/webpack-wp#readme",
+    "dependencies": {
+        "@automattic/webpack-rtl-plugin": "^6.0.0",
+        "@babel/core": "^7.26.0",
+        "@wordpress/babel-preset-default": "*",
+        "@wordpress/dependency-extraction-webpack-plugin": "*",
+        "autoprefixer": "^10.4.20",
+        "babel-loader": "^9.2.1",
+        "css-loader": "^7.1.2",
+        "mini-css-extract-plugin": "^2.9.2",
+        "postcss-flexbugs-fixes": "^5.0.2",
+        "postcss-loader": "^8.1.1",
+        "sass": "^1.83.0",
+        "sass-loader": "^16.0.4",
+        "webpack-manifest-plugin": "^5.0.0"
+    },
+    "peerDependencies": {
+        "webpack": "~5.x",
+        "webpack-cli": "~6.x"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
 }
